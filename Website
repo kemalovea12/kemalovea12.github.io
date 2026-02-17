@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QSI Atyrau Science Fair 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a00f4, #00d4ff, #ff00c8);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: white;
+  overflow-x: hidden;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+#countdown {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px;
+  background: rgba(0,0,0,0.2);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  text-align: center;
+}
+
+.floating {
+  position: absolute;
+  font-size: 40px;
+  opacity: 0.2;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.atom { top: 100px; left: 50px; }
+.flask { bottom: 120px; right: 50px; }
+.rocket { top: 50%; left: 20px; }
+
+</style>
+</head>
+<body>
+
+<div class="floating atom">⚛️</div>
+<div class="floating flask">🧪</div>
+<div class="floating rocket">🚀</div>
+
+<header>
+<div id="countdown"></div>
+<p>April 20th (9:00 AM) – April 22nd (11:30 AM)</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#news">News</a>
+<a href="#add">Add Your Project</a>
+<a href="#contacts">Contacts</a>
+</nav>
+
+<section id="home">
+<h1>🔬 QSI Atyrau Science Fair 2026 🚀</h1>
+<p style="font-size:22px; margin-top:20px;">Explore • Experiment • Engineer • Discover</p>
+</section>
+
+<section id="about">
+<h2>About the Science Fair</h2>
+<div class="card-container">
+<div class="card">
+<h3>Participation</h3>
+<p>Open to all students K–12. Nine separate grade levels: K–7, with middle school and secondary combined into one judging level.</p>
+</div>
+<div class="card">
+<h3>Purpose</h3>
+<p>The goal is to meet SOs and TSWs. Teachers help students identify appropriate TSWs while encouraging scientific thinking and creativity.</p>
+</div>
+<div class="card">
+<h3>Event Details</h3>
+<p>Start: April 20th at 9:00 AM<br>End: April 22nd at 11:30 AM<br>Location: QSI Atyrau Campus</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Suggested Projects by Grade</h2>
+<div class="card-container">
+<div class="card">
+<p><strong>K–2:</strong> Observation journals, plant growth exploration, magnet tests.</p>
+<p><strong>3–5:</strong> Density, solar ovens, buoyancy experiments.</p>
+<p><strong>6–7:</strong> Chemistry reactions, data analysis investigations.</p>
+<p><strong>8–12:</strong> Full inquiry or engineering design projects.</p>
+</div>
+</div>
+</section>
+
+<section id="news">
+<h2>Latest News</h2>
+<p>Project highlights and announcements coming soon!</p>
+</section>
+
+<section id="add">
+<h2>Add Your Project</h2>
+<p style="margin-bottom:30px;">Ready to showcase your experiment?</p>
+<button>Submit Project 🚀</button>
+</section>
+
+<section id="contacts">
+<h2>Contacts</h2>
+<p>Email: sciencefair@qsiatyrau.org</p>
+<p>Phone: +7 (XXX) XXX-XXXX</p>
+</section>
+
+<footer>
+© 2026 QSI Atyrau Science Fair
+</footer>
+
+<script>
+const eventStart = new Date("April 20, 2026 09:00:00").getTime();
+const eventEnd = new Date("April 22, 2026 11:30:00").getTime();
+
+setInterval(function() {
+  const now = new Date().getTime();
+  let distance;
+  let label;
+
+  if (now < eventStart) {
+    distance = eventStart - now;
+    label = "Event Begins In:";
+  } else if (now >= eventStart && now <= eventEnd) {
+    distance = eventEnd - now;
+    label = "Event Ends In:";
+  } else {
+    document.getElementById("countdown").innerHTML = "Science Fair Has Ended 🎉";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((distance / 1000 / 60) % 60);
+  const seconds = Math.floor((distance / 1000) % 60);
+
+  document.getElementById("countdown").innerHTML =
+    label + " " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+}, 1000);
+</script>
+
+</body>
+</html>
